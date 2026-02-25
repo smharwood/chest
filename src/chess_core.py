@@ -35,8 +35,8 @@ BLACK = "black"
 
 class ChessGame:
     """A two-player chess game"""
-    def __init__(self):
-        pyxel.init(SCREEN_SIZE, SCREEN_SIZE, title="Chess", display_scale=3, fps=30)
+    def __init__(self, title="Chess"):
+        pyxel.init(SCREEN_SIZE, SCREEN_SIZE, title=title, display_scale=3, fps=30)
         pyxel.mouse(True)
 
         self.board = [[None] * 8 for _ in range(8)]
