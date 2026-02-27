@@ -133,7 +133,8 @@ class ChessGamePeriodic(ChessGame):
                 return True
 
         # Pawn attacks
-        pawn_dir = -1 if opp == WHITE else 1
+        pawn_dir = 1 if opp == WHITE else -1  # Look toward where opp pawns sit
+        # pawn_dir = -1 if opp == WHITE else 1
         pr = _wrap(row + pawn_dir)
         for dc in [-1, 1]:
             pc = _wrap(col + dc)
