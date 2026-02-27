@@ -552,7 +552,7 @@ class ChessGame:
                     return True
 
         # Pawn attacks
-        pawn_dir = -1 if opp == WHITE else 1  # Direction pawns of opp color attack from
+        pawn_dir = 1 if opp == WHITE else -1  # Look toward where opp pawns sit
         for dc in [-1, 1]:
             pr, pc = row + pawn_dir, col + dc
             if 0 <= pr < 8 and 0 <= pc < 8:
