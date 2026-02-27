@@ -1,4 +1,4 @@
-# Chess/Chest
+# Chess/[Chest](https://www.bluey.tv/watch/season-3/chest/)
 
 A two-player chess game using the [pyxel](https://github.com/kitao/pyxel) library.
 
